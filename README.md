@@ -28,18 +28,26 @@ By default this will install files to "/usr/local"
 
 ---------------
 
-You will need to edit an environmental variable (like $PATH, on linux usually stored in ~/.bash_profile)
+You will need to edit an environmental variable (like $PATH, on linux usually stored in "~/.bash_profile")
 
 1. Check if the variable exists
+```bash
 echo $PKG_CONFIG_PATH
+```
 
 2. If blank
+```bash
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig"
+```
 Else (not blank)
+```bash
 export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig"
+```
 
 3. Update Bash
+```bash
 source ~/.bash_profile
+```
 
 
 The linker (GNU 'ld') might have trouble locating libvips.so....

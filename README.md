@@ -49,7 +49,7 @@ As root, add a configuration file
 # touch libvips.conf (verify that it has the same permissions as the other files)
 # nano libvips.conf
 ```
-(add one line) /usr/local/lib/
+(add one line) "/usr/local/lib/"
 ```bash
 # ldconfig (refreshes the linker cache)
 ```

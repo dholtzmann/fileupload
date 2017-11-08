@@ -17,10 +17,12 @@ Install libvips/vips, a fast image manipulation program. Instructions on github 
 
 https://github.com/jcupitt/libvips
 
+```bash
 $ ./configure
 $ make
 $ sudo make install
 $ sudo ldconfig
+```
 
 By default this will install files to "/usr/local"
 
@@ -42,11 +44,15 @@ source ~/.bash_profile
 
 The linker (GNU 'ld') might have trouble locating libvips.so....
 As root, add a configuration file
+```bash
 # cd /etc/ld.so.conf.d
 # touch libvips.conf (verify that it has the same permissions as the other files)
 # nano libvips.conf
+```
 (add one line) /usr/local/lib/
+```bash
 # ldconfig (refreshes the linker cache)
+```
 
 -----------------------
 

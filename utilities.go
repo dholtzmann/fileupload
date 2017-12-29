@@ -1,10 +1,11 @@
 package fileupload
 
 import (
-	"github.com/pkg/errors" // external dependency
 	"mime/multipart"
 	"net/http"
 	"strings"
+
+	"github.com/pkg/errors" // external dependency
 )
 
 func isFileImage(mimetype string) bool {

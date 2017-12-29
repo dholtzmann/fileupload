@@ -2,13 +2,14 @@ package fileupload
 
 import (
 	"bytes"
-	"github.com/google/uuid" // external dependency
-	"github.com/pkg/errors"  // external dependency
-	"gopkg.in/h2non/bimg.v1" // external dependency
 	"io"
 	"math"
 	"mime/multipart"
 	"os"
+
+	"gopkg.in/h2non/bimg.v1" // external dependencies
+	"github.com/google/uuid"
+	"github.com/pkg/errors"
 )
 
 /*

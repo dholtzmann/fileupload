@@ -2,11 +2,12 @@ package fileupload
 
 import (
 	"encoding/json"
-	"github.com/google/uuid" // external dependency
-	"github.com/pkg/errors"  // external dependency
 	"io"
 	"mime/multipart"
 	"os"
+
+	"github.com/google/uuid" // external dependencies
+	"github.com/pkg/errors"
 )
 
 var ErrDirectoryDoesNotExist = errors.New("The provided directory does not exist!")

@@ -1,8 +1,9 @@
 package fileupload
 
 import (
-	"github.com/pkg/errors" // external dependency
 	"os"
+
+	"github.com/pkg/errors" // external dependency
 )
 
 /*
